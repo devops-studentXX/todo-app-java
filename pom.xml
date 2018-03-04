@@ -18,17 +18,17 @@
 
   <modelVersion>4.0.0</modelVersion>
   <groupId>net.bluemix.todo</groupId>
-  <artifactId>bluemix-todo-app</artifactId>
+  <artifactId>todo-app-java</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>bluemix-todo-app</name>
+  <name>todo-app-java</name>
 
   <!-- ====================================================================== -->
   <!-- B U I L D -->
   <!-- ====================================================================== -->
   <build>
     <defaultGoal>install</defaultGoal>
-    <finalName>bluemix-todo-app</finalName>
+    <finalName>todo-app-java</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -48,7 +48,7 @@
             <phase>prepare-package</phase>
             <configuration>
               <tasks>
-                <copy todir="${project.build.directory}/bluemix-todo-app">
+                <copy todir="${project.build.directory}/todo-app-java">
                   <fileset dir="${project.basedir}../../../frontend"/>
                 </copy>
               </tasks>
@@ -198,7 +198,7 @@
             <configuration>
               <reload>manual</reload>
               <tempDirectory>${basedir}/target/work</tempDirectory>
-              <webApp>${basedir}/target/bluemix-todo-app.war</webApp>
+              <webApp>${basedir}/target/todo-app-java.war</webApp>
               <contextPath>/</contextPath>
             </configuration>
             <executions>
