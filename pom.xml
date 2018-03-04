@@ -49,7 +49,7 @@
             <configuration>
               <tasks>
                 <copy todir="${project.build.directory}/todo-app-java">
-                  <fileset dir="${project.basedir}../../../frontend"/>
+                  <fileset dir="${project.basedir}/frontend"/>
                 </copy>
               </tasks>
             </configuration>
