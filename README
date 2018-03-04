@@ -1,0 +1,6 @@
+How this repo is set
+
+master -> vanilla
+sonarqube -> added support for sonar.  Merge it to master to test it
+nexus -> added support for nexus repository. Merge it to master to test it
+jenkins -> added support for jenkins. Merge it to master to test it
